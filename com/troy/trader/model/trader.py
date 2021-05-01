@@ -29,7 +29,7 @@ print(data.loc[:, ['open','close']])
 print(data.iloc[3])
 print(data[data.close > 60])
 print(data.mean())
-upDown = data['open'].apply(lambda x: x>0)
+upDown = data.apply(lambda data: int(data['close']) >0)
 data['upDown'] = upDown
 print(data)
 # def getTraderSignal(data):
