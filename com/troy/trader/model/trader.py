@@ -18,19 +18,43 @@ import glob
 # data = np.array(data)
 # print(data)
 
+# 准备数据
 data = pd.read_csv('../data/SH#600000.csv')
-print(type(data))
+# print(type(data))
 # print(data[:, ['close']])
-print(data.head())
-print(data.index)
-print(data.columns)
-print(data['tradeDate'])
-print(data.loc[:, ['open','close']])
-print(data.iloc[3])
-print(data[data.close > 60])
-print(data.mean())
-upDown = data.apply(lambda data: int(data['close']) >0)
+# print(data.head())
+# print(data.index)
+# print(data.columns)
+# print(data['tradeDate'])
+# print(data.loc[:, ['open','close']])
+# print(data.iloc[3])
+# print(data[data.close > 60])
+# print(data.mean())
+data = pd.DataFrame(data)
+print(data)
+upDown = np.where(data.close > data.open, 1, 0)
 data['upDown'] = upDown
 print(data)
-# def getTraderSignal(data):
-#     print(data[0:3])
+data = data.drop(['tradeDate'], axis=1)
+print(data)
+
+# 训练模型
+# 切分训练数据和测试数据
+data = tf.constant(data, dtype=tf.float32)
+# print(data)
+x_train = data[:,0:-1]
+y_train = data[:,-1]
+print(x_train)
+print(y_train)
+
+model = tf.keras.Sequential()
+model.add(tf.keras.layers.Dense(1, input_shape=(6,)))
+model.add(tf.keras.layers.Dense(1, activation='relu'))
+model.add(tf.keras.layers.Dense(1,activation='softmax'))
+
+# print(model.summary())
+model.compile(optimizer='adam',
+              loss=tf.keras.losses.binary_crossentropy
+              )
+history = model.fit(x_train, y_train, epochs=1000)
+print(history)
