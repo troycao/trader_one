@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c399de4-95c7-41c6-810a-78641775e4e6" name="Default" comment="pracitce">
-      <change afterPath="$PROJECT_DIR$/com/troy/trader/test/matplotlib_practice.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/troy/trader/data/SH#600000_01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/com/troy/trader/data/SH#600000_01.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/troy/trader/test/pandas_pracitce.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/troy/trader/test/pandas_pracitce.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/troy/trader/test/matplotlib_practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/troy/trader/test/matplotlib_practice.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -340,7 +338,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618716728868</updated>
-      <workItem from="1618760584222" duration="25090000" />
+      <workItem from="1618760584222" duration="25245000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1619837013724</created>
@@ -363,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619942119752</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="pracitce">
+      <created>1620026201215</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1620026201215</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">

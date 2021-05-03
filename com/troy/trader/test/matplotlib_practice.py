@@ -15,13 +15,13 @@ plt.ylabel()
 # 设置刻度
 plt.xticks()
 plt.yticks()
-#保持tupian
+#保持图片
 plt.imsave()
-# 柱状图 离散的数据
+# 条形图 离散的数据
 plt.bar()
 plt.barh()
 
-# 柱状图 连续的数据
+# 直方图 连续的数据
 plt.hist()
 # 散点图
 plt.scatter(x,y)
