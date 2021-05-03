@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c399de4-95c7-41c6-810a-78641775e4e6" name="Default" comment="test">
-      <change afterPath="$PROJECT_DIR$/com/troy/trader/data/SH#600000_01.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/troy/trader/test/pandas_pracitce.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/troy/trader/utils/fill_ndarray.py" afterDir="false" />
+    <list default="true" id="7c399de4-95c7-41c6-810a-78641775e4e6" name="Default" comment="pracitce">
+      <change afterPath="$PROJECT_DIR$/com/troy/trader/test/matplotlib_practice.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/troy/trader/model/trader.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/troy/trader/model/trader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/troy/trader/test/numpy_practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/troy/trader/test/numpy_practice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/troy/trader/data/SH#600000_01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/com/troy/trader/data/SH#600000_01.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/troy/trader/test/pandas_pracitce.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/troy/trader/test/pandas_pracitce.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +21,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -183,7 +189,7 @@
       <recent name="G:\project\trader_one\com\troy\trader\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.trader">
+  <component name="RunManager" selected="Python.matplotlib_practice">
     <configuration name="data_practice" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="trader_one" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -206,7 +212,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="data_utils" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="matplotlib_practice" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="trader_one" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -214,12 +220,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/troy/trader/data" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/troy/trader/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="G:\project\trader_one\com\troy\trader\utils\data_utils.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/troy/trader/test/matplotlib_practice.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -311,17 +317,17 @@
     </configuration>
     <list>
       <item itemvalue="Python.trader" />
-      <item itemvalue="Python.data_utils" />
       <item itemvalue="Python.data_practice" />
       <item itemvalue="Python.numpy_practice" />
       <item itemvalue="Python.pandas_pracitce" />
+      <item itemvalue="Python.matplotlib_practice" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.matplotlib_practice" />
         <item itemvalue="Python.trader" />
         <item itemvalue="Python.pandas_pracitce" />
         <item itemvalue="Python.numpy_practice" />
-        <item itemvalue="Python.data_practice" />
         <item itemvalue="Python.data_practice" />
       </list>
     </recent_temporary>
@@ -334,7 +340,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618716728868</updated>
-      <workItem from="1618760584222" duration="21259000" />
+      <workItem from="1618760584222" duration="25090000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1619837013724</created>
@@ -350,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619841851489</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="pracitce">
+      <created>1619942119752</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1619942119752</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -396,13 +409,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="pracitce" />
+    <option name="LAST_COMMIT_MESSAGE" value="pracitce" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/trader_one$pandas_pracitce.coverage" NAME="pandas_pracitce Coverage Results" MODIFIED="1619934750862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/trader/test" />
+    <SUITE FILE_PATH="coverage/trader_one$pandas_pracitce.coverage" NAME="pandas_pracitce Coverage Results" MODIFIED="1619944554362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/trader/test" />
+    <SUITE FILE_PATH="coverage/trader_one$matplotlib_practice.coverage" NAME="matplotlib_practice Coverage Results" MODIFIED="1620026132332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/trader/test" />
     <SUITE FILE_PATH="coverage/trader_one$data_practice.coverage" NAME="data_practice Coverage Results" MODIFIED="1619102666186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/trader/practice" />
     <SUITE FILE_PATH="coverage/trader_one$numpy_practice.coverage" NAME="numpy_practice Coverage Results" MODIFIED="1619864613271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/trader/test" />
-    <SUITE FILE_PATH="coverage/trader_one$trader.coverage" NAME="trader Coverage Results" MODIFIED="1619941733983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/trader/model" />
+    <SUITE FILE_PATH="coverage/trader_one$trader.coverage" NAME="trader Coverage Results" MODIFIED="1620020929045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/trader/model" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/com/troy/trader/Main.py">
