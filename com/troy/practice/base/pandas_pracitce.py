@@ -28,7 +28,7 @@ print(d.where(d>3))
 
 e = pd.DataFrame(np.arange(24).reshape(4,6))
 print(e)
-df = pd.read_csv('../data/SH#600000_01.txt')
+df = pd.read_csv('../../trader/data/SH#600000_01.txt')
 print(df)
 print(type(df))
 print(df.index)
@@ -55,6 +55,6 @@ print(df.iloc[0,5])
 print(df.loc[:,'e'])
 print(df.loc['a',:])
 
-df = pd.read_csv('../data/SH#600000_01.txt')
+df = pd.read_csv('../../trader/data/SH#600000_01.txt')
 print(df[df['open']>df['close']])
 

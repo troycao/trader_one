@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="7c399de4-95c7-41c6-810a-78641775e4e6" name="Default" comment="pracitce">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/troy/trader/test/matplotlib_practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/troy/trader/test/matplotlib_practice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/troy/trader/practice/data_practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/troy/practice/data/data_practice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/troy/trader/test/ArrayTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/troy/practice/base/ArrayTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/troy/trader/test/LambdaTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/troy/practice/base/LambdaTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/troy/trader/test/matplotlib_practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/troy/practice/base/matplotlib_practice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/troy/trader/test/numpy_practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/troy/practice/base/numpy_practice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/troy/trader/test/pandas_pracitce.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/troy/practice/base/pandas_pracitce.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,6 +189,8 @@
       <recent name="G:\project\trader_one\com\troy\trader\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/com/troy/practice/data" />
+      <recent name="$PROJECT_DIR$/com/troy/practice" />
       <recent name="G:\project\trader_one\com\troy\trader\utils" />
     </key>
   </component>
@@ -201,7 +208,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/troy/trader/practice/data_practice.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/troy/practice/data/data_practice.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -338,7 +345,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618716728868</updated>
-      <workItem from="1618760584222" duration="25245000" />
+      <workItem from="1618760584222" duration="25598000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1619837013724</created>
@@ -368,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620026201215</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="pracitce">
+      <created>1620026638016</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1620026638016</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">

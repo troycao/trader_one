@@ -19,7 +19,7 @@
 # for a in list:
 #     print(a)
 #
-# list.append('test')
+# list.append('base')
 # print(list)
 # # print(list[0:-1])
 # # print(list[1:4])
