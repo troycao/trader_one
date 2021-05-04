@@ -3,11 +3,13 @@ from tensorflow import keras
 import numpy as np
 import matplotlib.pyplot as plt
 
-
+''''
+数字图片识别
+'''
 # 测试
 version = tf.__version__
 print(version)
-print(tf.test.is_gpu_available)
+print(tf.test.is_gpu_available())
 
 
 # 第一步：准备数据
@@ -25,13 +27,17 @@ test_images = np.expand_dims(test_images, -1)
 # 第二步：建立模型
 model = tf.keras.Sequential()
 # 参数 32：卷积核个数
-model.add(tf.keras.layers.Conv2D(32, (3,3), input_shape=train_images.shape[1:], activation='relu',padding='same'))
+model.add(tf.keras.layers.Conv2D(64, (3,3), input_shape=train_images.shape[1:], activation='relu',padding='same'))
+model.add(tf.keras.layers.Conv2D(64, (3,3), activation='relu', padding='same'))
+model.add(tf.keras.layers.Dropout(0.5))
 print(model.output_shape)
 model.add(tf.keras.layers.MaxPool2D())
 print(model.output_shape)
-model.add(tf.keras.layers.Conv2D(64, (3,3), activation='relu'))
+model.add(tf.keras.layers.Conv2D(128, (3,3), activation='relu'))
+model.add(tf.keras.layers.Conv2D(128, (3,3), activation='relu'))
 print(model.output_shape)
 model.add(tf.keras.layers.GlobalAvgPool2D())
+model.add(tf.keras.layers.Dropout(0.5))
 print(model.output_shape)
 model.add(tf.keras.layers.Dense(10, activation='softmax'))
 print(model.output_shape)
@@ -46,6 +52,12 @@ model.compile(optimizer='adam',
 history = model.fit(train_images,train_labels, epochs=10,validation_data=(test_images, test_labels))
 print(history.history.keys())
 
+# 绘制正确率折线图
 plt.plot(history.epoch, history.history.get('acc'), label='acc')
 plt.plot(history.epoch, history.history.get('val_acc'), label='val_acc')
+plt.show()
+
+# 绘制损失函数的折线图
+plt.plot(history.epoch, history.history.get('loss'), label='loss')
+plt.plot(history.epoch, history.history.get('val_loss'), label='val_loss')
 plt.show()
