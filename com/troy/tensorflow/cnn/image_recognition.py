@@ -43,8 +43,9 @@ model.compile(optimizer='adam',
               metrics=['acc'])
 
 # 第四步：训练
-history = model.fit(train_images,train_labels, epochs=1,validation_data=(test_images, test_labels))
+history = model.fit(train_images,train_labels, epochs=10,validation_data=(test_images, test_labels))
 print(history.history.keys())
 
-
-# plt.plot()
+plt.plot(history.epoch, history.history.get('acc'), label='acc')
+plt.plot(history.epoch, history.history.get('val_acc', label='val_acc'))
+plt.show()
