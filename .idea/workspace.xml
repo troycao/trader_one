@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c399de4-95c7-41c6-810a-78641775e4e6" name="Default" comment="edit package">
-      <change afterPath="$PROJECT_DIR$/com/troy/tensorflow/data/tf_dataset.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/troy/tensorflow/data/tf_model1.py" afterDir="false" />
+    <list default="true" id="7c399de4-95c7-41c6-810a-78641775e4e6" name="Default" comment="tf first parctice">
+      <change afterPath="$PROJECT_DIR$/com/troy/tensorflow/cnn/image_recognition.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -190,7 +189,29 @@
       <recent name="G:\project\trader_one\com\troy\trader\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.tf_model1">
+  <component name="RunManager" selected="Python.image_recognition">
+    <configuration name="image_recognition" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="trader_one" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/troy/tensorflow/cnn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/troy/tensorflow/cnn/image_recognition.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="matplotlib_practice" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="trader_one" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -205,28 +226,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/troy/trader/test/matplotlib_practice.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pandas_pracitce" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="trader_one" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/troy/trader/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/troy/trader/test/pandas_pracitce.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -318,18 +317,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.trader" />
-      <item itemvalue="Python.pandas_pracitce" />
       <item itemvalue="Python.matplotlib_practice" />
       <item itemvalue="Python.tf_dataset" />
       <item itemvalue="Python.tf_model1" />
+      <item itemvalue="Python.image_recognition" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.image_recognition" />
         <item itemvalue="Python.tf_model1" />
         <item itemvalue="Python.tf_dataset" />
         <item itemvalue="Python.matplotlib_practice" />
         <item itemvalue="Python.trader" />
-        <item itemvalue="Python.pandas_pracitce" />
       </list>
     </recent_temporary>
   </component>
@@ -341,7 +340,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618716728868</updated>
-      <workItem from="1618760584222" duration="29438000" />
+      <workItem from="1618760584222" duration="32535000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1619837013724</created>
@@ -385,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620027012267</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="tf first parctice">
+      <created>1620031019497</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1620031019497</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -433,13 +439,15 @@
     <MESSAGE value="test" />
     <MESSAGE value="pracitce" />
     <MESSAGE value="edit package" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit package" />
+    <MESSAGE value="tf first parctice" />
+    <option name="LAST_COMMIT_MESSAGE" value="tf first parctice" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/trader_one$pandas_pracitce.coverage" NAME="pandas_pracitce Coverage Results" MODIFIED="1619944554362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/trader/test" />
     <SUITE FILE_PATH="coverage/trader_one$matplotlib_practice.coverage" NAME="matplotlib_practice Coverage Results" MODIFIED="1620026132332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/trader/test" />
     <SUITE FILE_PATH="coverage/trader_one$tf_model1.coverage" NAME="tf_model1 Coverage Results" MODIFIED="1620030969258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/tensorflow/data" />
     <SUITE FILE_PATH="coverage/trader_one$data_practice.coverage" NAME="data_practice Coverage Results" MODIFIED="1619102666186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/trader/practice" />
+    <SUITE FILE_PATH="coverage/trader_one$image_recognition.coverage" NAME="image_recognition Coverage Results" MODIFIED="1620101929158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/tensorflow/cnn" />
     <SUITE FILE_PATH="coverage/trader_one$tf_dataset.coverage" NAME="tf_dataset Coverage Results" MODIFIED="1620030226607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/tensorflow/data" />
     <SUITE FILE_PATH="coverage/trader_one$numpy_practice.coverage" NAME="numpy_practice Coverage Results" MODIFIED="1619864613271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/trader/test" />
     <SUITE FILE_PATH="coverage/trader_one$trader.coverage" NAME="trader Coverage Results" MODIFIED="1620020929045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/trader/model" />
