@@ -47,5 +47,5 @@ history = model.fit(train_images,train_labels, epochs=10,validation_data=(test_i
 print(history.history.keys())
 
 plt.plot(history.epoch, history.history.get('acc'), label='acc')
-plt.plot(history.epoch, history.history.get('val_acc', label='val_acc'))
+plt.plot(history.epoch, history.history.get('val_acc'), label='val_acc')
 plt.show()
