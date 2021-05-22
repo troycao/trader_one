@@ -49,12 +49,15 @@ model.compile(optimizer='adam',
 # 4.训练模型
 history = model.fit(x_data,
                     y_data,
-                    epochs=20,
+                    epochs=50,
                     batch_size=32,
                     shuffle=True)
 
 # 5.绘图
-plt.plot(history.epoch, history.history.get('acc'), label='acc')
+plt.plot(history.epoch, history.history.get('acc'))
+plt.xlabel('acc')
 plt.show()
 
-
+plt.plot(history.epoch, history.history.get('loss'))
+plt.xlabel('loss')
+plt.show()
