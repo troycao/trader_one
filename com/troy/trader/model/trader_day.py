@@ -42,10 +42,16 @@ print(data)
 # 切分训练数据和测试数据
 data = tf.constant(data, dtype=tf.float32)
 # print(data)
-x_train = data[:,0:-1]
-y_train = data[:,-1]
-print(x_train)
-print(y_train)
+x_data = data[:,0:-1]
+y_data = data[:,-1]
+print(x_data)
+print(y_data)
+
+x_train = x_data
+y_train = y_data
+
+x_test = data[:,0:-1]
+y_test = data[:,-1]
 
 model = tf.keras.Sequential()
 model.add(tf.keras.layers.Dense(1, input_shape=(6,)))
@@ -54,7 +60,18 @@ model.add(tf.keras.layers.Dense(1,activation='softmax'))
 
 # print(model.summary())
 model.compile(optimizer='adam',
-              loss=tf.keras.losses.binary_crossentropy
+              loss=tf.keras.losses.binary_crossentropy,
+              metrics=['acc']
               )
-history = model.fit(x_train, y_train, epochs=1000)
-print(history)
+history = model.fit(x_train,
+                    y_train,
+                    validation_data=(x_test, y_test),
+                    epochs=50,
+                    batch_size=32,
+                    shuffle=True)
+
+plt.plot(history.epoch, history.history.get('acc'))
+plt.plot(history.epoch, history.history.get('loss'))
+plt.show()
+
+
