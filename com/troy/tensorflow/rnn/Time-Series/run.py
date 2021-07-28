@@ -9,11 +9,6 @@ from core.data_processor import DataLoader
 from core.model import Model
 from keras.utils import plot_model
 
-
-def plot_results(predicted_data, true_data):
-    fig
-
-
 def main():
     configs = json.load(open('config.json', 'r'))
     if not os.path.exists(configs['model']['save_dir']):os.makedirs(configs['model']['save_dir'])
@@ -22,10 +17,25 @@ def main():
         configs['data']['train_test_split'],
         configs['data']['columns']
     )
-
     model = Model()
+    model.build_model(configs)
 
+    x,y = data.get_train_data(
+        configs['data']['sequence_length'],
+        configs['data']['normalise']
+    )
 
+    print(x.shape)
+    print(y.shape)
+
+    print(configs['training']['batch_size'])
+    print(configs['model']['save_dir'])
+    model.train(x,
+                y,
+                configs['training']['epochs'],
+                configs['training']['batch_size'],
+                configs['model']['save_dir']
+                )
 
 
 if __name__ == '__main__':
