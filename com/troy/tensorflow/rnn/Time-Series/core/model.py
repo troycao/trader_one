@@ -55,3 +55,59 @@ class Model():
         self.model.save(save_file_name)
         print("model training completed,model save file %s", save_file_name)
 
+    def predict_point_by_point(self,data):
+        print("model predicting point by point")
+        prdiceted = self.model.predict(data)
+        prdiceted = np.reshape(prdiceted, (prdiceted.size,))
+        return prdiceted
+
+    def predict_sequences_multiplt(self, data, window_size, prediction_len, debug=False):
+        if debug == False:
+            print("model predicting sequences multiple...")
+            prediction_seqs = []
+            for i in range(int(len(data)/prediction_len)):
+                curr_frame = data[i*prediction_len]
+                predicted = []
+                for j in range(prediction_len):
+                    predicted.append(self.model.predict(curr_frame[np.newaxis, :, :])[0, 0])
+                    curr_frame =curr_frame[1:]
+                    curr_frame = np.insert(curr_frame, [window_size-2], predicted[-1], axis=0)
+                prediction_seqs.append(predicted)
+            return prediction_seqs
+        else:
+            print("model predicting sequences multiple...")
+            prediction_seqs = []
+            for i in range(int(len(data)/prediction_len)):
+                print(data.shape)
+                curr_frame = data[i * prediction_len]
+                predicted = []
+                for j in range(prediction_len):
+                    predict_result = self.model.predict(curr_frame[np.newaxis, :, :])
+                    print(predict_result)
+                    final_result = predict_result[0,0]
+                    predicted.append(final_result)
+                    curr_frame = curr_frame[1:]
+                    curr_frame = np.insert(curr_frame, [window_size-2], predicted[-1], axis=0)
+                prediction_seqs.append(predicted)
+            return  prediction_seqs
+
+    def predict_sequences_full(self, data, window_size):
+        print("model predicting seq full...")
+        curr_frame = data[0]
+        predicted = []
+        for i in range(len(data)):
+            predicted.append(self.model.predict(curr_frame[np.newaxis,:,:])[0,0])
+            curr_frame = curr_frame[1:]
+            curr_frame = np.insert(curr_frame, [window_size-2], predicted[-1], axis=0)
+        return predicted
+
+    def predict_point_by_point(self, data, debug=False):
+        print("model predicting seq potin...")
+        predicted = self.model.predict(data)
+        print('predicted shape:', np.array(predicted).shape)  # (412L,1L)
+        predicted = np.reshape(predicted, (predicted.size,))
+        return predicted
+
+
+
+

@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c399de4-95c7-41c6-810a-78641775e4e6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/troy/tensorflow/lstm/stock/SH#600000.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/troy/tensorflow/lstm/stock/stock_01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series/core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series/data/SH#600000.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/trader_one.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/trader_one.iml" afterDir="false" />
+    <list default="true" id="7c399de4-95c7-41c6-810a-78641775e4e6" name="Default" comment="lstm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series/core/data_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series/core/data_processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series/core/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series/core/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series/core/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series/run.py" afterDir="false" />
     </list>
@@ -25,6 +17,17 @@
       <list>
         <option value="Python Script" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
@@ -184,10 +187,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series/core" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -358,6 +363,7 @@
       <workItem from="1622262586809" duration="1024000" />
       <workItem from="1625971937417" duration="7115000" />
       <workItem from="1627051576817" duration="214000" />
+      <workItem from="1627474113058" duration="9689000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1619837013724</created>
@@ -450,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621671809175</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="lstm">
+      <created>1627454066165</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1627454066165</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -499,7 +512,8 @@
     <MESSAGE value="tf first parctice" />
     <MESSAGE value="practice" />
     <MESSAGE value="trader" />
-    <option name="LAST_COMMIT_MESSAGE" value="trader" />
+    <MESSAGE value="lstm" />
+    <option name="LAST_COMMIT_MESSAGE" value="lstm" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/trader_one$data_practice.coverage" NAME="data_practice Coverage Results" MODIFIED="1619102666186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/trader/practice" />
@@ -517,7 +531,7 @@
     <SUITE FILE_PATH="coverage/trader_one$numpy_practice.coverage" NAME="numpy_practice Coverage Results" MODIFIED="1619864613271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/trader/test" />
     <SUITE FILE_PATH="coverage/trader_one$tf_model1.coverage" NAME="tf_model1 Coverage Results" MODIFIED="1620030969258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/tensorflow/data" />
     <SUITE FILE_PATH="coverage/trader_one$matplotlib_practice.coverage" NAME="matplotlib_practice Coverage Results" MODIFIED="1620026132332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/trader/test" />
-    <SUITE FILE_PATH="coverage/trader_one$run.coverage" NAME="run Coverage Results" MODIFIED="1627453875309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series" />
+    <SUITE FILE_PATH="coverage/trader_one$run.coverage" NAME="run Coverage Results" MODIFIED="1627528610566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series" />
     <SUITE FILE_PATH="coverage/trader_one$trader_day.coverage" NAME="trader_day Coverage Results" MODIFIED="1627384307306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/trader/model" />
   </component>
   <component name="editorHistoryManager">
