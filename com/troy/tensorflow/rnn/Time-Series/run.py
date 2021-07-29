@@ -38,7 +38,7 @@ def main():
     model = Model()
     my_model = model.build_model(configs)
 
-    plot_model(my_model, to_file='model.png', show_shapes=True)
+    plot_model(my_model, to_file='output\model.png', show_shapes=True)
 
     x,y = data.get_train_data(
         configs['data']['sequence_length'],
@@ -66,7 +66,7 @@ def main():
     # predictions = model.predict_sequences_full(x_test, configs['data']['sequence_length'])
     prediction_point = model.predict_point_by_point(x_test)
 
-    print(prediction_point)
+    # print(prediction_point)
     # print(np.array(predictions).shape)
 
     # plot_results_multiple(predictions, y_test, configs['data']['sequence_length'])
