@@ -30,17 +30,18 @@ def plot_results_multiple(predicted_data, true_data, predicted_len):
 def main():
     configs = json.load(open('config.json', 'r'))
     if not os.path.exists(configs['model']['save_dir']):os.makedirs(configs['model']['save_dir'])
+
+    model = Model()
+    my_model = model.build_model(configs)
+
+    plot_model(my_model, to_file='output\model.png', show_shapes=True)
     data = DataLoader(
         os.path.join('data', configs['data']['filename']),
         configs['data']['train_test_split'],
         configs['data']['columns']
     )
-    model = Model()
-    my_model = model.build_model(configs)
 
-    plot_model(my_model, to_file='output\model.png', show_shapes=True)
-
-    x,y = data.get_train_data(
+    x, y = data.get_train_data(
         configs['data']['sequence_length'],
         configs['data']['normalise']
     )

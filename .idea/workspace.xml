@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c399de4-95c7-41c6-810a-78641775e4e6" name="Default" comment="lstm股票预测模型">
+      <change afterPath="$PROJECT_DIR$/com/troy/tensorflow/rnn/lstm/data/SH#600001.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/troy/trader/data/SH#600000.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/troy/trader/data/SH#600000_01.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,14 +192,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series/core" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/com/troy/tensorflow/rnn/lstm/data" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\trader\project\trader_one\com\troy\tensorflow\rnn\lstm\data" />
+      <recent name="D:\trader\project\trader_one\com\troy\tensorflow\rnn" />
+      <recent name="D:\trader\project\trader_one\com\troy\tensorflow\rnn\Time-Series\data" />
       <recent name="D:\trader\project\trader_one\com\troy\tensorflow\rnn\Time-Series\core" />
       <recent name="$PROJECT_DIR$/com/troy/trader/data" />
-      <recent name="G:\project\trader_one\com\troy\trader\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\trader\project\trader_one\com\troy\tensorflow\rnn\Time-Series\data" />
@@ -206,8 +211,8 @@
       <recent name="G:\project\trader_one\com\troy\trader\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.run">
-    <configuration name="CBOW" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.run (1)">
+    <configuration name="data_processor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="trader_one" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -215,12 +220,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/troy/tensorflow/nlp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series/core" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/troy/tensorflow/nlp/CBOW.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series/core/data_processor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -243,6 +248,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series/core/model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="trader_one" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/troy/tensorflow/rnn/lstm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/troy/tensorflow/rnn/lstm/run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -295,28 +322,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="trader_three_day" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="trader_one" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/troy/trader/model" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/troy/trader/model/trader_three_day.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <module name="trader_one" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -333,19 +338,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.CBOW" />
-      <item itemvalue="Python.trader_three_day" />
       <item itemvalue="Python.skip-gram" />
       <item itemvalue="Python.run" />
       <item itemvalue="Python.model" />
+      <item itemvalue="Python.data_processor" />
+      <item itemvalue="Python.run (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run (1)" />
         <item itemvalue="Python.run" />
+        <item itemvalue="Python.data_processor" />
         <item itemvalue="Python.model" />
         <item itemvalue="Python.skip-gram" />
-        <item itemvalue="Python.CBOW" />
-        <item itemvalue="Python.trader_three_day" />
       </list>
     </recent_temporary>
   </component>
@@ -361,7 +366,10 @@
       <workItem from="1622262586809" duration="1024000" />
       <workItem from="1625971937417" duration="7115000" />
       <workItem from="1627051576817" duration="214000" />
-      <workItem from="1627474113058" duration="9803000" />
+      <workItem from="1627474113058" duration="10916000" />
+      <workItem from="1627609574575" duration="813000" />
+      <workItem from="1627905743372" duration="1841000" />
+      <workItem from="1628130518193" duration="5097000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1619837013724</created>
@@ -468,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627528729190</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="lstm股票预测模型">
+      <created>1627528835933</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1627528835933</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -521,10 +536,23 @@
     <MESSAGE value="lstm股票预测模型" />
     <option name="LAST_COMMIT_MESSAGE" value="lstm股票预测模型" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/com/troy/tensorflow/rnn/lstm/run.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/trader_one$data_processor.coverage" NAME="data_processor Coverage Results" MODIFIED="1628132646678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series/core" />
     <SUITE FILE_PATH="coverage/trader_one$data_practice.coverage" NAME="data_practice Coverage Results" MODIFIED="1619102666186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/trader/practice" />
     <SUITE FILE_PATH="coverage/trader_one$model.coverage" NAME="model Coverage Results" MODIFIED="1627444966709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series/core" />
     <SUITE FILE_PATH="coverage/trader_one$tf_dataset.coverage" NAME="tf_dataset Coverage Results" MODIFIED="1620030226607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/tensorflow/data" />
+    <SUITE FILE_PATH="coverage/trader_one$run__1_.coverage" NAME="run (1) Coverage Results" MODIFIED="1628135572039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/tensorflow/rnn/lstm" />
     <SUITE FILE_PATH="coverage/trader_one$stock_01.coverage" NAME="stock_01 Coverage Results" MODIFIED="1627388736327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/tensorflow/lstm/stock" />
     <SUITE FILE_PATH="coverage/trader_one$pandas_pracitce.coverage" NAME="pandas_pracitce Coverage Results" MODIFIED="1619944554362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/trader/test" />
     <SUITE FILE_PATH="coverage/trader_one$CBOW.coverage" NAME="CBOW Coverage Results" MODIFIED="1627047571633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/tensorflow/nlp" />
@@ -537,7 +565,7 @@
     <SUITE FILE_PATH="coverage/trader_one$numpy_practice.coverage" NAME="numpy_practice Coverage Results" MODIFIED="1619864613271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/trader/test" />
     <SUITE FILE_PATH="coverage/trader_one$tf_model1.coverage" NAME="tf_model1 Coverage Results" MODIFIED="1620030969258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/tensorflow/data" />
     <SUITE FILE_PATH="coverage/trader_one$matplotlib_practice.coverage" NAME="matplotlib_practice Coverage Results" MODIFIED="1620026132332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/trader/test" />
-    <SUITE FILE_PATH="coverage/trader_one$run.coverage" NAME="run Coverage Results" MODIFIED="1627528610566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series" />
+    <SUITE FILE_PATH="coverage/trader_one$run.coverage" NAME="run Coverage Results" MODIFIED="1628132744528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/tensorflow/rnn/Time-Series" />
     <SUITE FILE_PATH="coverage/trader_one$trader_day.coverage" NAME="trader_day Coverage Results" MODIFIED="1627384307306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/com/troy/trader/model" />
   </component>
   <component name="editorHistoryManager">
